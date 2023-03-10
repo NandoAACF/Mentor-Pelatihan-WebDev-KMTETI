@@ -1,173 +1,235 @@
-// Untuk ngeprint
-console.log("Hello world");
+// // Untuk ngeprint
+// console.log("Hello world");
 
-let nama = "Nando";
-console.log(nama);
+// let nama = "Nando";
+// console.log(nama);
 
-nama = "Ananta";
-console.log(nama);
+// nama = "Ananta";
+// console.log(nama);
 
-const nama2 = "Nando";
-// nama2 = "irfan";
-// console.log(nama2);
+// const nama2 = "Nando";
+// // nama2 = "irfan";
+// // console.log(nama2);
 
-const angka = "123";
-console.log(typeof angka);
+// const angka = "123";
+// console.log(typeof angka);
 
-const angkaAsli = Number(angka);
-console.log(typeof angkaAsli);
+// const angkaAsli = Number(angka);
+// console.log(typeof angkaAsli);
 
-console.log(angkaAsli + 10);
-console.log(angka + 10);
+// console.log(angkaAsli + 10);
+// console.log(angka + 10);
 
-const a = 10;
-const b = 2;
+// const a = 10;
+// const b = 2;
 
-console.log(a * b);
+// console.log(a * b);
 
-let jumlahPesananTerkirim = 10;
-const statusPesanan = "terkirim";
+// let jumlahPesananTerkirim = 10;
+// const statusPesanan = "terkirim";
 
-if (statusPesanan == "terkirim") {
-    jumlahPesananTerkirim++;
-}
+// if (statusPesanan == "terkirim") {
+//     jumlahPesananTerkirim++;
+// }
 
-console.log(jumlahPesananTerkirim);
+// console.log(jumlahPesananTerkirim);
 
-let i = 0;
+// let i = 0;
 
-for (i = 0; i < 3; i++) {
-    console.log(i);
-}
+// for (i = 0; i < 3; i++) {
+//     console.log(i);
+// }
 
-const namaku = "Benaya";
-const umur = 19;
+// const namaku = "Benaya";
+// const umur = 19;
 
-const kalimatPerkenalan = "Hai, aku " + namaku + ". Aku berumur " + umur + " tahun.";
-console.log(kalimatPerkenalan);
+// const kalimatPerkenalan = "Hai, aku " + namaku + ". Aku berumur " + umur + " tahun.";
+// console.log(kalimatPerkenalan);
 
-const kalimatPerkenalan2 = `Hai, aku ${namaku}. Aku berumur ${umur} tahun.`;
-console.log(kalimatPerkenalan2);
+// const kalimatPerkenalan2 = `Hai, aku ${namaku}. Aku berumur ${umur} tahun.`;
+// console.log(kalimatPerkenalan2);
 
-// Function biasa
-function menyapa(nama) {
-    console.log(`Halo ${nama}`);
-}
+// // Function biasa
+// function menyapa(nama) {
+//     console.log(`Halo ${nama}`);
+// }
 
-menyapa("Nando");
-menyapa("Benaya");
-menyapa("Naufal");
+// menyapa("Nando");
+// menyapa("Benaya");
+// menyapa("Naufal");
 
-// Arrow function
-const menyapa2 = (nama) => {
-    console.log(`Halo ${nama}`);
-};
+// // Arrow function
+// const menyapa2 = (nama) => {
+//     console.log(`Halo ${nama}`);
+// };
 
-menyapa2("Nando");
-menyapa2("Benaya");
-menyapa2("Naufal");
+// menyapa2("Nando");
+// menyapa2("Benaya");
+// menyapa2("Naufal");
 
-const r1 = 10;
+// const r1 = 10;
 
-const luasLingkaran1 = 3.14 * r1 * r1;
+// const luasLingkaran1 = 3.14 * r1 * r1;
 
-console.log(luasLingkaran1);
+// console.log(luasLingkaran1);
 
-const r2 = 20;
-const luasLingkaran2 = 3.14 * r2 * r2;
-console.log(luasLingkaran2);
+// const r2 = 20;
+// const luasLingkaran2 = 3.14 * r2 * r2;
+// console.log(luasLingkaran2);
 
-// Function biasa
-function luasLingkaran(r1) {
-    return 3.14 * r1 * r1;
-}
+// // Function biasa
+// function luasLingkaran(r1) {
+//     return 3.14 * r1 * r1;
+// }
 
-console.log(luasLingkaran(10));
-console.log(luasLingkaran(20));
-console.log(luasLingkaran(15));
+// console.log(luasLingkaran(10));
+// console.log(luasLingkaran(20));
+// console.log(luasLingkaran(15));
 
-// Arrow function
-const luasLingkaran3 = (r1, r2) => {
-    return 3.14 * r1 * r2;
-};
+// // Arrow function
+// const luasLingkaran3 = (r1, r2) => {
+//     return 3.14 * r1 * r2;
+// };
 
-console.log(luasLingkaran3(10, 23));
-console.log(luasLingkaran3(20, 43));
-console.log(luasLingkaran3(15, 45));
+// console.log(luasLingkaran3(10, 23));
+// console.log(luasLingkaran3(20, 43));
+// console.log(luasLingkaran3(15, 45));
 
-const kumpulanNama = ["Nando", "Benaya", "Naufal"];
+// const kumpulanNama = ["Nando", "Benaya", "Naufal"];
+// // console.log(kumpulanNama);
+
+// // kumpulanNama.push("Irfan");
+// // console.log(kumpulanNama);
+
+// kumpulanNama.pop("Naufal");
 // console.log(kumpulanNama);
 
-// kumpulanNama.push("Irfan");
-// console.log(kumpulanNama);
+// const kumpulanAngka = [1, 2, 3, 4, 6, 8, 123, 5];
 
-kumpulanNama.pop("Naufal");
-console.log(kumpulanNama);
+// const hasilMapAngka = kumpulanAngka.map((angka) => {
+//     return angka * 2;
+// });
 
-const kumpulanAngka = [1, 2, 3, 4, 6, 8, 123, 5];
+// console.log(hasilMapAngka);
 
-const hasilMapAngka = kumpulanAngka.map((angka) => {
-    return angka * 2;
-});
+// const kumpulanAngkaGenap = kumpulanAngka.filter((angka) => {
+//     return angka % 2 == 0;
+// });
 
-console.log(hasilMapAngka);
+// console.log(kumpulanAngkaGenap);
 
-const kumpulanAngkaGenap = kumpulanAngka.filter((angka) => {
-    return angka % 2 == 0;
-});
+// const angkaGenap = kumpulanAngka.find((angka) => {
+//     return angka % 2 == 0;
+// });
 
-console.log(kumpulanAngkaGenap);
+// console.log(angkaGenap);
 
-const angkaGenap = kumpulanAngka.find((angka) => {
-    return angka % 2 == 0;
-});
+// const indexAngkaGenap = kumpulanAngka.findIndex((angka) => {
+//     return angka % 2 == 0;
+// });
 
-console.log(angkaGenap);
+// console.log(indexAngkaGenap);
 
-const indexAngkaGenap = kumpulanAngka.findIndex((angka) => {
-    return angka % 2 == 0;
-});
+// const apakahAdaAngkaGenap = kumpulanAngka.some((angka) => {
+//     return angka % 2 == 0;
+// });
 
-console.log(indexAngkaGenap);
+// console.log(apakahAdaAngkaGenap);
 
-const apakahAdaAngkaGenap = kumpulanAngka.some((angka) => {
-    return angka % 2 == 0;
-});
+// apakahSemuaAngkaGenap = kumpulanAngka.every((angka) => {
+//     return angka % 2 == 0;
+// });
 
-console.log(apakahAdaAngkaGenap);
+// console.log(apakahSemuaAngkaGenap);
 
-apakahSemuaAngkaGenap = kumpulanAngka.every((angka) => {
-    return angka % 2 == 0;
-});
+// const orang1 = {
+//     nama: "Nando",
+//     umur: 19,
+//     fruits: ["jeruk", "pear"],
+//     asal: {
+//         provinsi: "DIY",
+//         kabupaten: "Bantul",
+//     },
+// };
 
-console.log(apakahSemuaAngkaGenap);
+// console.log(orang1.fruits[1]);
+// console.log(orang1.asal.provinsi);
 
-const orang1 = {
-    nama: "Nando",
-    umur: 19,
-    fruits: ["jeruk", "pear"],
-    asal: {
-        provinsi: "DIY",
-        kabupaten: "Bantul",
-    },
-};
+// const orang = (nama, umur, fruits, asalProvinsi, asalKabupaten) => {
+//     return {
+//         nama: nama,
+//         umur: umur,
+//         fruits: fruits,
+//         asal: {
+//             provinsi: asalProvinsi,
+//             kabupaten: asalKabupaten,
+//         },
+//     };
+// };
 
-console.log(orang1.fruits[1]);
-console.log(orang1.asal.provinsi);
+// const orangPertama = orang("Nando", 19, ["jeruk", "mangga"], "DIY", "Bantul");
+// console.log(orangPertama);
+// const orangKedua = orang("Naufal", 20, "pear", "DKI", "Jakarta");
+// console.log(orangKedua);
 
-const orang = (nama, umur, fruits, asalProvinsi, asalKabupaten) => {
-    return {
-        nama: nama,
-        umur: umur,
-        fruits: fruits,
-        asal: {
-            provinsi: asalProvinsi,
-            kabupaten: asalKabupaten,
-        },
+// const file = "Tugas1_473804_Christian Fernando_Webdev.pdf";
+
+// const fileArray = file.split("_");
+// console.log(fileArray);
+
+// const MatkulExtensionArray = fileArray[3].split(".");
+// console.log(MatkulExtensionArray);
+
+// const fileObject = {
+//     judul: fileArray[0],
+//     niu: Number(fileArray[1]),
+//     nama: fileArray[2],
+//     matkul: MatkulExtensionArray[0],
+//     ext: MatkulExtensionArray[1],
+// };
+
+// console.log(fileObject.nama);
+
+const createFileObject = (fileName) => {
+    const fileArray = fileName.split("_");
+    console.log(fileArray);
+
+    const MatkulExtensionArray = fileArray[3].split(".");
+    console.log(MatkulExtensionArray);
+
+    const fileObject = {
+        judul: fileArray[0],
+        niu: Number(fileArray[1]),
+        nama: fileArray[2],
+        matkul: MatkulExtensionArray[0],
+        ext: MatkulExtensionArray[1],
     };
+
+    return fileObject;
 };
 
-const orangPertama = orang("Nando", 19, ["jeruk", "mangga"], "DIY", "Bantul");
-console.log(orangPertama);
-const orangKedua = orang("Naufal", 20, "pear", "DKI", "Jakarta");
-console.log(orangKedua);
+const file1 = createFileObject("Tugas1_473804_Christian Fernando_Webdev.pdf");
+const file2 = createFileObject("Tugas10_500000_Fernando_Alin.pdf");
+
+console.log(file1.nama);
+console.log(file2.nama);
+
+const daftarTugas = [
+    "Tugas1_456370_Nando_Aljabar.pdf",
+    "Tugas2_456370_Nando_Aljabar.pdf",
+    "Tugas3_456370_Nando_Aljabar.pdf",
+    "Tugas4_456370_Nando_Alin.pdf",
+    "Tugas5_456370_Nando_Aljabar.pdf",
+    "Tugas5_456370_Nando_Aljabar.pdf",
+    "Tugas5_456370_Nando_Aljabar.pdf",
+    "Tugas5_456370_Nando_Aljabar.pdf",
+    "Tugas5_456370_Nando_Aljabar.pdf",
+    "Tugas5_456370_Nando_Aljabar.pdf",
+    "Tugas5_456370_Nando_Aljabar.pdf",
+    "Tugas5_456370_Nando_Aljabar.pdf",
+    "Tugas5_456370_Nando_Aljabar.pdf",
+];
+
+const semuaTugas = daftarTugas.map((tugas) => createFileObject(tugas));
+console.log(semuaTugas);
+console.log(semuaTugas[3].matkul);
