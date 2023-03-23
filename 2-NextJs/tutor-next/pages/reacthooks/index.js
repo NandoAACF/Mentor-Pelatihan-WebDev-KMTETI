@@ -1,4 +1,7 @@
 import { useState, useEffect, useRef } from "react";
+import router from "next/router";
+import Link from "next/link";
+import Head from "next/head";
 
 export default function ReactHooks() {
     const pemberitahuan = () => {
@@ -24,6 +27,9 @@ export default function ReactHooks() {
 
     return (
         <>
+            <Head>
+                <title>Pelatihan WebDev | Hari ketiga</title>
+            </Head>
             <div className="flex flex-col items-center justify-center gap-[10px]">
                 <button onClick={pemberitahuan}>Klik saya1</button>
                 <button onClick={() => alert("Halo")}>Klik saya2</button>
@@ -45,6 +51,30 @@ export default function ReactHooks() {
                 />
 
                 <p>{teks}</p>
+
+                <button
+                    onClick={() => {
+                        router.push("/");
+                    }}
+                >
+                    Tombol ke beranda
+                </button>
+
+                <button
+                    onClick={() => {
+                        router.push("/modal");
+                    }}
+                >
+                    Tombol ke halaman modal
+                </button>
+
+                <Link href="/modal">
+                    <button>Tombol ke modal pakai tag Link</button>
+                </Link>
+
+                <a href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank">
+                    <button>Tombol ke Youtube</button>
+                </a>
             </div>
         </>
     );
