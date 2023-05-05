@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import Head from "next/head";
 import { useState } from "react";
 
 export default function Beranda() {
@@ -9,6 +10,12 @@ export default function Beranda() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if (!title || !desc) {
+            alert("Mohon isi judul dan deskripsi");
+            return;
+        }
+
         setTodos([...todos, { id: Date.now(), title, desc }]);
         setTitle("");
         setDesc("");
@@ -39,6 +46,9 @@ export default function Beranda() {
 
     return (
         <>
+            <Head>
+                <title>ToDo App | Pelatihan</title>
+            </Head>
             <div className="flex flex-col items-center justify-center m-[30px]">
                 <h1 className="text-[30px] text-center font-bold">Todos</h1>
                 <form onSubmit={handleSubmit} className="flex flex-col items-start justify-center gap-[14px] mt-[15px]">
@@ -79,13 +89,13 @@ export default function Beranda() {
                             <h1 className="text-[16px]">{todo.desc}</h1>
                         </div>
                         <div className="flex flex-row items-start justify-start gap-[10px]">
-                            <Button type="Edit" onClick={() => handleEdit(todo.id)} />
+                            {edit ? "" : <Button type="Edit" onClick={() => handleEdit(todo.id)} />}
                             <Button type="Delete" onClick={() => handleDelete(todo.id)} />
                         </div>
                     </div>
                 ))}
 
-                <Button type="Delete All" onClick={() => handleDeleteAll()} />
+                {todos.length == 0 ? "" : <Button type="Delete All" onClick={() => handleDeleteAll()} />}
             </div>
         </>
     );
